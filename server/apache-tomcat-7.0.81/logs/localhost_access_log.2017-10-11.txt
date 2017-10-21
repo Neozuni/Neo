@@ -1,0 +1,4 @@
+0:0:0:0:0:0:0:1 - - [11/Oct/2017:08:42:50 +0900] "GET /web34_BoardDelete_Update/index.jsp HTTP/1.1" 200 494
+0:0:0:0:0:0:0:1 - - [11/Oct/2017:08:42:52 +0900] "GET /web34_BoardDelete_Update/img/write_btn.jpg HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [11/Oct/2017:08:43:47 +0900] "GET /web34_BoardDelete_Update/DispatcherServlet?command=list HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [11/Oct/2017:08:43:47 +0900] "GET /web34_BoardDelete_Update/error.jsp HTTP/1.1" 404 1019
