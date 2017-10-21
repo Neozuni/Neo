@@ -23,7 +23,7 @@
 			<table width="700" border="1" cellpadding="0" cellspacing="0">
 				<tr>
 					<td align="center">
-					게시판에 저장된 글이 없습니다.
+					게시판에 저장된 글이 없습니다 ...  
 					</td>
 					</tr>
 			</table>
