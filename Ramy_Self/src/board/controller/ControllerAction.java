@@ -14,6 +14,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import board.action.CommandAction;
+
 public class ControllerAction extends HttpServlet {
 	private static final long serialVersionUID = 1L; // 명령어와 명령어 처리 클래스를 쌍으로 저장
 	private Map<String, Object> commandMap = new HashMap<String, Object>();
