@@ -126,7 +126,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log." suffix=".txt"/>
 
-      <Context docBase="bootstrap" path="/bootstrap" reloadable="true" source="org.eclipse.jst.jee.server:bootstrap"/><Context docBase="Ramy_Brushed" path="/Ramy_Brushed" reloadable="true" source="org.eclipse.jst.jee.server:Ramy_Brushed"/><Context docBase="Ramy_Mordena" path="/Ramy_Mordena" reloadable="true" source="org.eclipse.jst.jee.server:Ramy_Mordena"/><Context docBase="Ramy_pluton" path="/Ramy_pluton" reloadable="true" source="org.eclipse.jst.jee.server:Ramy_pluton"/><Context docBase="Ramy_pratt" path="/Ramy_pratt" reloadable="true" source="org.eclipse.jst.jee.server:Ramy_pratt"/><Context docBase="Ramy_Runkeeper" path="/Ramy_Runkeeper" reloadable="true" source="org.eclipse.jst.jee.server:Ramy_Runkeeper"/><Context docBase="Ramy_Self" path="/Ramy_Self" reloadable="true" source="org.eclipse.jst.jee.server:Ramy_Self"/><Context docBase="self_Board" path="/self_Board" reloadable="true" source="org.eclipse.jst.jee.server:self_Board"/></Host>
+      <Context docBase="self_Board" path="/self_Board/src" reloadable="true" source="org.eclipse.jst.jee.server:self_Board"/></Host>
     </Engine>
   </Service>
 </Server>

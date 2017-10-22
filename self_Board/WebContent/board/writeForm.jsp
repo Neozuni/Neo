@@ -1,5 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ include file="view/color.jspf" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -64,7 +63,9 @@
 	<td colspan="2" bgcolor="${value_c }" align="center">
 	<input type="submit" value="글쓰기">
 	<input type="reset" value="다시작성">
-	<input type="button" value="목록보기" onclick="windows.location='/myWeb/board/list.doi'">
+	
+	<%-- #0004: 목록보기 오류구문 수정 list.doi = list.do--%> 
+	<input type="button" value="목록보기" onclick="windows.location='/myWeb/board/list.do'">
 	</td>
 	</tr>
 

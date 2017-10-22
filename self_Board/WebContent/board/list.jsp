@@ -12,11 +12,10 @@
 </head>
 <body bgcolor="${bodyback_c}">
 	<center>
-		<b>글목록(전체글:${count})</b>
+		<b>글목록(전체글 : ${count})</b>
 		<table width="700">
 			<tr>
-				<td align="right" bgcolor="${value_c }"><a
-					href="/myWeb/board/writeForm.do">글쓰기</a></td>
+				<td align="right" bgcolor="${value_c }"><a href="/myWeb/board/writeForm.do">글쓰기</a></td>
 			</tr>
 		</table>
 		<c:if test="${count==0 }">
@@ -70,7 +69,8 @@
 			<c:set var="imsi" value="$count% % pageSize==0?0:1}"/>
 			<c:set var="pageCount" value="${count/pageSize+imsi }"/>
 			<c:set var="pageBlock" value="${3}"/>
-			<fmt:parseNumber var="result" value="${(currentPage-1)/pageBlock }integerOnly="true"/>
+			<%-- #0004: list.jsp symbol err  --%>
+			<fmt:parseNumber var="result" value="${(currentPage-1)/pageBlock }" integerOnly="true"/>
 			<c:set var="startPage" value="${result*pageBlock+1 }"/>
 			<c:set var="endPage" value="${startPage+pageBlock-1 }"/>
 			<c:if test="${endPage>pageCount }">

@@ -11,6 +11,7 @@ import board.action.CommandAction;
 public class ControllerAction extends HttpServlet {
 	private static final long serialVerstionUID = 1L;
 	//명령어와 명령어 처리 클래스를 쌍으로 저장
+	
 	private Map<String, Object> commandMap = new HashMap<String, Object>();
 	//명령어와 처리클래스가 매핑되어 있는 properties 파일을 읽어서
 	//map 객체인 commandMap 에 저장 
@@ -25,7 +26,7 @@ public class ControllerAction extends HttpServlet {
 		
 		Properties pr = new Properties();
 		FileInputStream f= null;
-		String path = config.getServletContext().getRealPath("/web-inf");
+		String path = config.getServletContext().getRealPath("/WEB-INF");
 		
 		try {
 			//Command.properties 파일의 내용을 읽어옴
@@ -85,6 +86,7 @@ public class ControllerAction extends HttpServlet {
 		} catch (Throwable e) {
 			throw new ServletException();
 		}
+		
 		RequestDispatcher dispatcher = request.getRequestDispatcher(view);
 		dispatcher.forward(request, response);
 	}
