@@ -9,7 +9,9 @@ public class DeleteProAction implements CommandAction { //글삭제
 	public String requestPro(HttpServletRequest request, HttpServletResponse response)throws Throwable{
 		request.setCharacterEncoding("UTF-8");
 		int num = Integer.parseInt(request.getParameter("num"));
-		String pasgeNum = request.getParameter("pageNum");
+		
+		// #0002:오타수정 pageNum
+		String pageNum = request.getParameter("pageNum");
 		String pass = request.getParameter("pass");
 		BoardDAO dbPro = BoardDAO.getInstance();
 		int check = dbPro.deleteArticle(num, pass);

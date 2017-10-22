@@ -1,13 +1,14 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ tagilb prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ include file="view/color.jspf" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>게시판</title>
-<link herf="style" rel="stylesheet" type="text/css">
+<%-- #0002: 오타수정 href --%>
+<link href="style" rel="stylesheet" type="text/css">
 <script language="JavaScript" src="script.js"></script>
 </head>
 <body bgcolor="${bodyback_c }">
@@ -21,7 +22,8 @@
 <table width="400" border="1" cellpadding="0" cellspacing="0" align="center">
 <tr>
 <td align="center" colspan="2" bgcolor="${value_c }">
-<a herf="/myWeb/board/list.do">글목록</a>
+<%-- #0002: 오타수정 href --%>
+<a href="/myWeb/board/list.do">글목록</a>
 </td>
 </tr>
 <tr>
@@ -67,9 +69,8 @@
 	</tr>
 
 </table>
-
-
-
 </form>
+<%-- #0002: 누락구문 삽입  --%>
+</center>
 </body>
 </html>
